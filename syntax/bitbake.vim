@@ -44,8 +44,8 @@ syn match bbArrayBrackets       "[\[\]]" contained
 
 " BitBake strings
 syn match bbContinue            "\\$"
-syn region bbString             matchgroup=bbQuote start=+"+ skip=+\\$+ excludenl end=+"+ contained keepend contains=bbTodo,bbContinue,bbVarDeref,bbVarPyValue,@Spell
-syn region bbString             matchgroup=bbQuote start=+'+ skip=+\\$+ excludenl end=+'+ contained keepend contains=bbTodo,bbContinue,bbVarDeref,bbVarPyValue,@Spell
+syn region bbString             matchgroup=bbQuote start=+"+ skip=+\\$+ excludenl end=+"+ contained keepend contains=bbTodo,bbContinue,bbVarDeref,bbVarPyValue,bbComment,@Spell
+syn region bbString             matchgroup=bbQuote start=+'+ skip=+\\$+ excludenl end=+'+ contained keepend contains=bbTodo,bbContinue,bbVarDeref,bbVarPyValue,bbComment,@Spell
 
 " Vars definition
 syn match bbExport            "^export" nextgroup=bbIdentifier skipwhite
