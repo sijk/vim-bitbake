@@ -35,7 +35,7 @@ syn match bbUnmatched           "."
 " Comments
 syn cluster bbCommentGroup      contains=bbTodo,@Spell
 syn keyword bbTodo              COMBAK FIXME TODO XXX contained
-syn match bbComment             "#.*$" contains=@bbCommentGroup
+syn match bbComment             "^\s*#.*$" contains=@bbCommentGroup
 
 " String helpers
 syn match bbQuote               +['"]+ contained 
